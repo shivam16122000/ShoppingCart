@@ -20,7 +20,7 @@ function Ap(props) {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/ShoppingCart/">
           <Homepage arr={arr} />
         </Route>
         <Route exact path="/shop">
@@ -48,7 +48,7 @@ function Homepage(props) {
           <div className="logo" />
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
             <Menu.Item key="1" style={{ fontSize: '1.2em' }}>
-              <Link to="/">Home</Link>
+              <Link to="/ShoppingCart/">Home</Link>
             </Menu.Item>
 
             <Menu.Item
@@ -60,7 +60,7 @@ function Homepage(props) {
                 height: '4.6em',
               }}
             >
-              <Link to="/cart">
+              <Link to="/ShoppingCart/cart">
                 {' '}
                 <ShoppingCartOutlined style={{ fontSize: '1.9em' }} />
                 <h3
@@ -80,7 +80,7 @@ function Homepage(props) {
               key="3"
               style={{ float: 'right', marginRight: '20px', fontSize: '1.4em' }}
             >
-              <Link to="/shop"> Shop</Link>
+              <Link to="/ShoppingCart/shop"> Shop</Link>
             </Menu.Item>
           </Menu>
         </Header>
@@ -103,7 +103,7 @@ function Homepage(props) {
                   margin: '0 auto',
                 }}
               >
-                <Link to="/shop">Enter Shop </Link>
+                <Link to="/ShoppingCart/shop">Enter Shop </Link>
               </p>
             </div>
           </div>
@@ -131,7 +131,7 @@ function Shop(props) {
           <div className="logo" />
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['3']}>
             <Menu.Item key="1" style={{ fontSize: '1.2em' }}>
-              <Link to="/">Home</Link>
+              <Link to="/ShoppingCart/">Home</Link>
             </Menu.Item>
 
             <Menu.Item
@@ -143,7 +143,7 @@ function Shop(props) {
                 height: '4.6em',
               }}
             >
-              <Link to="/cart">
+              <Link to="/ShoppingCart/cart">
                 {' '}
                 <ShoppingCartOutlined style={{ fontSize: '1.9em' }} />
                 <h3
@@ -163,7 +163,7 @@ function Shop(props) {
               key="3"
               style={{ float: 'right', marginRight: '20px', fontSize: '1.4em' }}
             >
-              <Link to="/shop">Shop</Link>
+              <Link to="/ShoppingCart/shop">Shop</Link>
             </Menu.Item>
           </Menu>
         </Header>
@@ -270,7 +270,7 @@ function Cart(props) {
           <div className="logo" />
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
             <Menu.Item key="1" style={{ fontSize: '1.2em' }}>
-              <Link to="/">Home</Link>
+              <Link to="/ShoppingCart/">Home</Link>
             </Menu.Item>
 
             <Menu.Item
@@ -282,7 +282,7 @@ function Cart(props) {
                 height: '4.6em',
               }}
             >
-              <Link to="/cart">
+              <Link to="/ShoppingCart/cart">
                 <ShoppingCartOutlined style={{ fontSize: '1.9em' }} />
                 <h3
                   style={{
@@ -301,7 +301,7 @@ function Cart(props) {
               key="3"
               style={{ float: 'right', marginRight: '20px', fontSize: '1.4em' }}
             >
-              <Link to="/shop">Shop</Link>
+              <Link to="/ShoppingCart/shop">Shop</Link>
             </Menu.Item>
           </Menu>
         </Header>
@@ -344,7 +344,13 @@ function ShoeComponent(props) {
       </div>
       <h2>{name}</h2>
       <div>
-        {price} <button onClick={incrementcounter}>Add To Cart</button>
+        {price}{' '}
+        <Button type="primary" onClick={incrementcounter}>
+          Add To Cart
+        </Button>
+        <Button type="link">
+          <Link to="/ShoppingCart/cart">Go To Cart</Link>
+        </Button>
       </div>
     </div>
   );
@@ -402,7 +408,7 @@ function CheckOut(props) {
           arr.splice(0, arr.length);
         }}
       >
-        <Link to="/checkout">CheckOut</Link>
+        <Link to="/ShoppingCart/checkout">CheckOut</Link>
       </Button>
     </div>
   );
@@ -418,7 +424,7 @@ function Thanks(props) {
           <div className="logo" />
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
             <Menu.Item key="1" style={{ fontSize: '1.2em' }}>
-              <Link to="/">Home</Link>
+              <Link to="/ShoppingCart/">Home</Link>
             </Menu.Item>
 
             <Menu.Item
@@ -430,7 +436,7 @@ function Thanks(props) {
                 height: '4.6em',
               }}
             >
-              <Link to="/cart">
+              <Link to="/ShoppingCart/cart">
                 <ShoppingCartOutlined style={{ fontSize: '1.9em' }} />
                 <h3
                   style={{
@@ -449,7 +455,7 @@ function Thanks(props) {
               key="3"
               style={{ float: 'right', marginRight: '20px', fontSize: '1.4em' }}
             >
-              <Link to="/shop">Shop</Link>
+              <Link to="/ShoppingCart/shop">Shop</Link>
             </Menu.Item>
           </Menu>
         </Header>
@@ -458,7 +464,7 @@ function Thanks(props) {
             <h1 style={{ color: 'purple', fontSize: '30px' }}>
               Thanks For Buying From SHIVAM Footwear !
             </h1>
-            <Link to="/shop">
+            <Link to="/ShoppingCart/shop">
               <Button type="primary">Continue Shopping!</Button>
             </Link>
           </div>

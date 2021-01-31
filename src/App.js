@@ -8,16 +8,16 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/ShoppingCart/">
           <Homepage arr={arr} />
         </Route>
-        <Route exact path="/shop">
+        <Route exact path="/ShoppingCart/shop">
           <Shop arr={arr} setarr={setArr} />
         </Route>
-        <Route exact path="/cart">
+        <Route exact path="/ShoppingCart/cart">
           <Cart arr={arr} />
         </Route>
-        <Route exact path="/checkout">
+        <Route exact path="/ShoppingCart/checkout">
           <Thanks />
         </Route>
       </Switch>
