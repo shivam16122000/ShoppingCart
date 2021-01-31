@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/ShoppingCart/static/css/main.57d269cf.chunk.css",
+    "main.js": "/ShoppingCart/static/js/main.2f5f5c19.chunk.js",
+    "main.js.map": "/ShoppingCart/static/js/main.2f5f5c19.chunk.js.map",
+    "runtime-main.js": "/ShoppingCart/static/js/runtime-main.ea1fed48.js",
+    "runtime-main.js.map": "/ShoppingCart/static/js/runtime-main.ea1fed48.js.map",
+    "static/css/2.f3f01324.chunk.css": "/ShoppingCart/static/css/2.f3f01324.chunk.css",
+    "static/js/2.a497999c.chunk.js": "/ShoppingCart/static/js/2.a497999c.chunk.js",
+    "static/js/2.a497999c.chunk.js.map": "/ShoppingCart/static/js/2.a497999c.chunk.js.map",
+    "static/js/3.063b776f.chunk.js": "/ShoppingCart/static/js/3.063b776f.chunk.js",
+    "static/js/3.063b776f.chunk.js.map": "/ShoppingCart/static/js/3.063b776f.chunk.js.map",
+    "index.html": "/ShoppingCart/index.html",
+    "static/css/2.f3f01324.chunk.css.map": "/ShoppingCart/static/css/2.f3f01324.chunk.css.map",
+    "static/css/main.57d269cf.chunk.css.map": "/ShoppingCart/static/css/main.57d269cf.chunk.css.map",
+    "static/js/2.a497999c.chunk.js.LICENSE.txt": "/ShoppingCart/static/js/2.a497999c.chunk.js.LICENSE.txt",
+    "static/media/homeshoe.c3c04de6.jpg": "/ShoppingCart/static/media/homeshoe.c3c04de6.jpg",
+    "static/media/shoe1.57abede3.jpg": "/ShoppingCart/static/media/shoe1.57abede3.jpg",
+    "static/media/shoe2.edb10215.jpeg": "/ShoppingCart/static/media/shoe2.edb10215.jpeg",
+    "static/media/shoe3.25736be1.jpeg": "/ShoppingCart/static/media/shoe3.25736be1.jpeg",
+    "static/media/shoe4.270265db.jpg": "/ShoppingCart/static/media/shoe4.270265db.jpg",
+    "static/media/shoe5.7d736046.jpg": "/ShoppingCart/static/media/shoe5.7d736046.jpg",
+    "static/media/shoe6.1c19dc0f.jpg": "/ShoppingCart/static/media/shoe6.1c19dc0f.jpg",
+    "static/media/shoe7.90acfce5.jpg": "/ShoppingCart/static/media/shoe7.90acfce5.jpg",
+    "static/media/shoe8.8689e2e8.jpg": "/ShoppingCart/static/media/shoe8.8689e2e8.jpg",
+    "static/media/shoe9.f9abef8b.jpg": "/ShoppingCart/static/media/shoe9.f9abef8b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea1fed48.js",
+    "static/css/2.f3f01324.chunk.css",
+    "static/js/2.a497999c.chunk.js",
+    "static/css/main.57d269cf.chunk.css",
+    "static/js/main.2f5f5c19.chunk.js"
+  ]
+}
